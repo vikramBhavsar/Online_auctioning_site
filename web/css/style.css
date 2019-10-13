@@ -3994,7 +3994,7 @@ p.w3ls_para {
 	}
 	.single-right-left:nth-child(1){
 		float: left;
-		width: 60%;
+		width: 100%;
 		padding:0 0 0px;
 		margin-bottom: 50px;
 	}
