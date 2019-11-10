@@ -1,3 +1,9 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!-- ------------------our own code --------------------- -->
 <!-- ------------------our own code --------------------- -->
 <!-- ------------------our own code --------------------- -->
@@ -6,11 +12,9 @@
 <!-- ------------------our own code --------------------- -->
 <?php 
 	// this php code includes makes sessions and handles session. to logout just call destroySession();
-	include 'makeSession.php';
+    include 'makeSession.php';
 ?>
 
-
-
 <!-- ------------------our own code --------------------- -->
 <!-- ------------------our own code --------------------- -->
 <!-- ------------------our own code --------------------- -->
@@ -19,16 +23,11 @@
 <!-- ------------------our own code --------------------- -->
 
 
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>Elite Shoppy an Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>Elite Shoppy an Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Single :: w3layouts</title>
 <!--/tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -36,11 +35,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--//tags -->
+<!-- //tags -->
+
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main2.css">
+
+<script src='js/our_own_js.js'></script>
+
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 <link href="css/font-awesome.css" rel="stylesheet"> 
 <link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
 <!-- //for bootstrap working -->
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
@@ -50,7 +57,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header" id="home">
 	<div class="container">
 		<ul>
-				            <!-- php code for login and logout -->
+
+			            <!-- php code for login and logout -->
 						<?php
 							if(isset($_SESSION['loggedin'])){
 								if($_SESSION['loggedin'] == '1'){
@@ -77,8 +85,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			<!-- <li> <a href="logout.php" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li> -->
 			<li> <a href="registration.php"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li>
-			<li> <a href="contact.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Contact Us</a></li>
-			<!-- <li><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</li> -->
+			<li><i class="fa fa-phone" aria-hidden="true"></i> Call : 01234567898</li>
 
 			<?php
 
@@ -106,7 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<!-- header-bot -->
 			<div class="col-md-4 logo_agile">
-				<h1><a href="index.php"><b>Bid It</b><i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
+				<h1><a href="index.php">Bid It<i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
 			</div>
         <!-- header-bot -->
 		<div class="col-md-4 agileits-social top_content">
@@ -196,8 +203,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 						<div class="modal-body modal-body-sub_agile">
 						<div class="col-md-8 modal_body_left modal_body_left1">
-						<h3 class="agileinfo_sign"> <span>Now</span></h3>
-						 <form action="#" method="post">
+						<h3 class="agileinfo_sign">Sign Up <span>Now</span></h3>
+									<form action="#" method="post">
 							<div class="styled-input agile-styled-input-top">
 								<input type="text" name="Name" required="">
 								<label>Name</label>
@@ -249,403 +256,262 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 <!-- //Modal2 -->
 
-<!-- banner -->
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<!-- Indicators -->
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1" class=""></li>
-			<li data-target="#myCarousel" data-slide-to="2" class=""></li>
-			<li data-target="#myCarousel" data-slide-to="3" class=""></li>
-			<li data-target="#myCarousel" data-slide-to="4" class=""></li> 
-		</ol>
-		<div class="carousel-inner" role="listbox">
-			<div class="item active"> 
-				<div class="container">
-					<div class="carousel-caption">
-					<h3>We provide the property you need</h3>
-						<p>Special for today</p>
-					</div>
-				</div>
-			</div>
-			<div class="item item2"> 
-				<div class="container">
-					<div class="carousel-caption">
-					<h3>We provide the property you need</h3>
-						<p>Special for today</p>
-					</div>
-				</div>
-			</div>
-			<div class="item item3"> 
-				<div class="container">
-					<div class="carousel-caption">
-					<h3>We provide the property you need</h3>
-						<p>Special for today</p>
-					</div>
-				</div>
-			</div>
-			<div class="item item4"> 
-				<div class="container">
-					<div class="carousel-caption">
-					<h3>We provide the property you need</h3>
-						<p>Special for today</p>
-					</div>
-				</div>
-			</div>
-			<div class="item item5"> 
-				<div class="container">
-					<div class="carousel-caption">
-						<h3>We provide the property you need</h3>
-						<p>Special for today</p>
-					</div>
-				</div>
-			</div> 
-		</div>
-		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-		<!-- The Modal -->
-    </div> 
-	<!-- //banner -->
-	<br>
-	<br>
-    <!--<div class="banner_bottom_agile_info">
-	    <div class="container">
-            <div class="banner_bottom_agile_info_inner_w3ls">
-    	           <div class="col-md-6 wthree_banner_bottom_grid_three_left1 grid">
-						<figure class="effect-roxy">
-							<img src="images/bottom1.jpg" alt=" " class="img-responsive" />
-							<figcaption>
-								<h3><span>F</span>all Ahead</h3>
-								<p>New Arrivals</p>
-							</figcaption>			
-						</figure>
-					</div>
-					 <div class="col-md-6 wthree_banner_bottom_grid_three_left1 grid">
-						<figure class="effect-roxy">
-							<img src="images/bottom2.jpg" alt=" " class="img-responsive" />
-							<figcaption>
-								<h3><span>F</span>all Ahead</h3>
-								<p>New Arrivals</p>
-							</figcaption>			
-						</figure>
-					</div>
-					<div class="clearfix"></div>
-		    </div> 
-		 </div> 
-    </div>-->
-	<!-- schedule-bottom -->
-	<div class="schedule-bottom">
-		<div class="col-md-6 agileinfo_schedule_bottom_left">
-			<img src="../web/web_images/Apartments/isec_apartment/1.jpg" alt="" class="img-responsive" />
-		</div>
-		<div class="col-md-6 agileits_schedule_bottom_right">
-			<div class="w3ls_schedule_bottom_right_grid">
-				<h3>Have a succesful bid </h3>
-				<p>Find out the best properties of your choice and bid for it</p>
-				<div class="col-md-4 w3l_schedule_bottom_right_grid1">
-					<i class="fa fa-user-o" aria-hidden="true"></i>
-					<h4>Users</h4>
-					<h5 class="counter">653</h5>
-				</div>
-				<div class="col-md-4 w3l_schedule_bottom_right_grid1">
-					<i class="fa fa-calendar-o" aria-hidden="true"></i>
-					<h4>Bids</h4>
-					<h5 class="counter">823</h5>
-				</div>
-				<div class="col-md-4 w3l_schedule_bottom_right_grid1">
-					<i class="fa fa-shield" aria-hidden="true"></i>
-					<h4>Awards</h4>
-					<h5 class="counter">45</h5>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-<!-- //schedule-bottom -->
-  <!-- banner-bootom-w3-agileits -->
-	<div class="banner-bootom-w3-agileits">
-	<div class="container">
-		<h3 class="wthree_text_info">What's <span>Trending</span></h3>
+
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+
+<?php 
+	include 'db_connection.php';
+
+	if(isset($_POST['bidconfirm'])){
+			if(!isset($_SESSION['userid'])){
+				echo '</br></br><span><h1 align="center">You have to log in to bid on properties</h1></span></br></br>';
+			}else{
+
+				$propid = $_POST['pidname'];
+				$bidderid = $_SESSION['userid'];
+				$bidding = $_POST['userbidinp'];
+
+				put_bid_information($propid,$bidderid,$bidding);
+
+				echo '</br></br><span><h1 align="center">Your Bid has been recorded</h1></span></br></br>';
+			}
+		}
+
+
+
 	
-		<!-- <div class="col-md-5 bb-grids bb-left-agileits-w3layouts">
-			<a href="womens.html">
-			   <div class="bb-left-agileits-w3layouts-inner grid">
-					<figure class="effect-roxy">
-							<img src="images/4.jpg" alt=" " class="img-responsive" />
-							<figcaption>
-								<h3><span>S</span>ale </h3>
-								<p>Upto 55%</p>
-							</figcaption>			
-						</figure>
-			    </div>
-			</a>
-		</div> -->
-		<div class="col-md-6 col-lg-6 col-sm-6 bb-grids bb-middle-agileits-w3layouts">
-		      <a href="mens.html">
-		       <div class="bb-middle-agileits-w3layouts grid">
-			           <figure class="effect-roxy">
-							<img src="images/3.jpg" alt=" " class="img-responsive" />
-							<figcaption>
-								<h3><span>S</span>ale </h3>
-								<p>Upto 55%</p>
-							</figcaption>			
-						</figure>
-		        </div>
-				</a>
-		</div>
-		<div class="col-md-6 col-lg-6 col-sm-6 bb-grids bb-middle-agileits-w3layouts">
-				<a href="mens.html">
-		      <div class="bb-middle-agileits-w3layouts forth grid">
-						<figure class="effect-roxy">
-							<img src="images/7.jpg" alt=" " class="img-responsive">
-							<figcaption>
-								<h3><span>S</span>ale </h3>
-								<p>Upto 65%</p>
-							</figcaption>		
-						</figure>
-					</div>
-					</a>
-		<div class="clearfix"></div>
-	</div>
-	</div>
-    </div>
-<!--/grids-->
-    <!--  <div class="agile_last_double_sectionw3ls">
-            <div class="col-md-6 multi-gd-img multi-gd-text ">
-					<a href="womens.html"><img src="images/bot_1.jpg" alt=" "><h4>Flat <span>50%</span> offer</h4></a>
-					
-			</div>
-			 <div class="col-md-6 multi-gd-img multi-gd-text ">
-					<a href="womens.html"><img src="images/bot_2.jpg" alt=" "><h4>Flat <span>50%</span> offer</h4></a>
-			</div>
-			<div class="clearfix"></div>
-	   </div>-->							
-<!--/grids-->
-<!-- /new_arrivals --> 
+	
+	// echo $_POST["pidinp"];
+	if(isset($_POST["pidinp"])){
 
-     <!------------------------------------------------ CUSTOM HTML CODE ---------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
+		$pid =  $_POST['pidinp'];
+		
+		$results = get_property_information_by_id($pid);
 
+		foreach($results as $row){
+			$pid = $row['pid'];
+			$pname = $row['pname'];
+			$startingbid = $row['startingbid'];
+			// $getmaximumbid = get_maximum_bid_
+			$selname = $row['username'];
+			$selemail = $row['emailid'];
+			$selphone = $row['phone'];
+			$seladdr = $row['address'];
+			$typename = $row['typename'];
+			$area_sq_feet = $row['area_sq_feet'];
+			$property_address = $row['prop_address'];
+			$property_age = $row['page'];
 
+								# this method converts the string to lower case 
+								// and replaces space with _
 
+			$property_folder =  str_replace(' ','_',strtolower($pname));
 
-	<div class="new_arrivals_agile_w3ls_info"> 
+			# making the image directory.
+			$img_dir = $web_img_dir .'' . $typename . '/'. $property_folder;
+
+			#getting all the photos
+			$photos = get_property_photos_by_id($pid);
+?>
+
+<!--/single_page-->
+       <!-- /banner_bottom_agile_info -->
+<div class="page-head_agile_info_w3l">
 		<div class="container">
-		    <h3 class="wthree_text_info">New <span>Arrivals</span></h3>		
-					<!--/tab_one-->
+			<h3><?php echo $pname?></h3>
+			<!--/w3_short-->
+				 <div class="services-breadcrumb">
+						<div class="agile_inner_breadcrumb">
 
-					<?php
-
-						# Including the main php file.
-						include 'db_connection.php';
-				
-
-						if(get_db_connection()){
-
-							$results = get_all_property_information();
-
-							$count = 1;
-							foreach($results as $row){
-
-								// Single row of property table
-								$pid = $row['pid'];
-								$pname = $row['pname'];
-								$startingbid = $row['startingbid'];
-								$selname = $row['username'];
-								$selemail = $row['emailid'];
-								$selphone = $row['phone'];
-								$seladdr = $row['address'];
-								$typename = $row['typename'];
-
-
-								// $getProImg = "SELECT * FROM `productimgtbl` WHERE pid = ".$pid.";";
-								
-								# Accessing images folder
-								$propertyFolder = str_replace(' ','_',strtolower($row['pname']));
-								$ptypeFolder = $row['typename'];
-								
-								
-								# Making directory path
-								$dir =  $web_img_dir.$ptypeFolder."/".$propertyFolder."/";
-
-								// echo $dir;
-								
-
-								
-								# get property images based on pid
-								$propertyPhotos = get_property_photos_by_id($pid);
-						
-								// Storing path of photos in an array
-								$photolist = array();
-								
-								// Geting path of photos for current property.
-								foreach($propertyPhotos as $photo){
-									
-									array_push($photolist,$dir.$photo['imgsrc']);
-								}
-
-								
-								// echo "Iterattion ".$count." and array content: ".$photolist[0];
-								//temporary end of php	
-								?>
-
-
-									<div class="col-md-6 product-men">
-									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item">
-											<!-- <img src="images/m1.jpg" alt="" class="pro-image-front">
-											<img src="images/m1.jpg" alt="" class="pro-image-back"> -->
-
-											<img src="<?php echo $photolist[0]?> " width="800" height="300" alt="" class="pro-image-front cover">
-											<img src="<?php echo $photolist[1]?> " width="800" height="300" alt="" class="pro-image-back cover">
-
- 
-											<span class="product-new-top">New</span>
-												
-										</div>
-										<div class="item-info-product ">
-											<h4><a href="single.html"> <?php echo $row['pname'] ?> </a></h4>
-											<div class="info-product-price">
-												<span class="item_price"> Rs. <?php echo $startingbid?></span>
-											</div>
-											<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
-																<form action="single.php" method="post">
-																	<fieldset>
-
-																		<!-- My hidden files  -->
-																		
-																		<input type="hidden" name="pidinp" value="<?php echo $pid?>" />
-																		<input type="hidden" name="pname" value="<?php echo $pname?>" />	
-																		<input type="hidden" name="pusername" value="<?php echo $username?>" />	
-																		<input type="hidden" name="startingbid" value="<?php echo $startingbid?>" />	
-																		<input type="hidden" name="emailid" value="<?php echo $emailid?>" />	
-																		<input type="hidden" name="phone" value="<?php echo $phone?>" />	
-																		<input type="hidden" name="address" value="<?php echo $address?>" />	
-																		<input type="hidden" name="typename" value="<?php echo $typename?>" />	
-
-
-																		<!-- template hidden values -->
-																		<!-- <input type="hidden" name="cmd" value="_cart" />
-																		<input type="hidden" name="add" value="1" />
-																		<input type="hidden" name="business" value=" " />
-																		<input type="hidden" name="item_name" value="Formal Blue Shirt" />
-																		<input type="hidden" name="amount" value="30.99" /> -->
-
-																		<input type="submit" name="submit" value="Bid Here." class="button" />
-																	</fieldset>
-																</form>
-															</div>
-																				
-										</div>
-									</div>
-								</div>
-					<?php 
-					
-							 } // end of foreach
-						} // end of if
-
-					?>
-
-
-
-
-
-
-
-			</div>
-		</div>
-
-
-
-
-	 <!------------------------------------------------ CUSTOM HTML CODE ---------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-     <!------------------------------------------------ --------------------------------------------------------------------------->
-
-
-	<!-- //new_arrivals --> 
-
-<!--/grids-->
-<div class="coupons">
-		<div class="coupons-grids text-center">
-			<div class="w3layouts_mail_grid">
-				<div class="col-md-3 w3layouts_mail_grid_left">
-					<div class="w3layouts_mail_grid_left1 hvr-radial-out">
-						<i class="fa fa-clone" aria-hidden="true"></i>
-					</div>
-					<div class="w3layouts_mail_grid_left2">
-						<h3>MAXIMUM CHOICES</h3>
-						<p>Maximum choices are available to help customers to buy the right property</p>
-					</div>
+						   <ul class="w3_short">
+								<li><a href="index.php">View more</a><i>|</i></li>
+								<li>Bid Now</li>
+							</ul>
+						 </div>
 				</div>
-				<div class="col-md-3 w3layouts_mail_grid_left">
-					<div class="w3layouts_mail_grid_left1 hvr-radial-out">
-						<i class="fa fa-headphones" aria-hidden="true"></i>
-					</div>
-					<div class="w3layouts_mail_grid_left2">
-						<h3>24/7 SUPPORT</h3>
-						<p>Customers can bid for properties and can put for selling anywhere, anytime</p>
-					</div>
-				</div>
-				<div class="col-md-3 w3layouts_mail_grid_left">
-					<div class="w3layouts_mail_grid_left1 hvr-radial-out">
-						<i class="fa fa-handshake-o" aria-hidden="true"></i>
-					</div>
-					<div class="w3layouts_mail_grid_left2">
-						<h3>SECURITY</h3>
-						<p>Only trusted properties are put for bidding</p>
-					</div>
-				</div>
-					<div class="col-md-3 w3layouts_mail_grid_left">
-					<div class="w3layouts_mail_grid_left1 hvr-radial-out">
-						<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-					</div>
-					<div class="w3layouts_mail_grid_left2">
-						<h3>SELLERS PREFER US</h3>
-						<p>As all users are authorized sellers can freely put their properties for sale and can get the best price through bidding</p>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-
-		</div>
+	   <!--//w3_short-->
+	</div>
 </div>
-<!--grids-->
+
+
+  <!-- banner-bootom-w3-agileits -->
+  <div class="banner-bootom-w3-agileits">
+	<div class="container">
+		<div class="col-md-5 single-right-left ">
+									<div class="grid images_3_of_2">
+										<div class="flexslider">
+											<ul class="slides">
+
+
+
+<!-- this pages gets $pidinp from index page when user clicks on 'bid here' from one of the properties -->
+<?php
+			foreach($photos as $single_photo){
+				$temp_img_dir = $img_dir;
+				$temp_img_dir = $img_dir ."/". $single_photo['imgsrc'];
+
+				// ending php code
+				?>
+					<!-- code for putting the side images -->
+											<li data-thumb="<?php echo $temp_img_dir?>">
+												<div class="thumb-image"> <img src="<?php echo $temp_img_dir?>" data-imagezoom="true" class="img-responsive"> </div>
+											</li>
+
+				<!-- starting php code -->
+				<?php
+				// echo $temp_img_dir . "</br>";
+			} //This is end of foreach loop to loop the photos.
+			?>
+													</ul>
+										<div class="clearfix"></div>
+									</div>	<!--flexslider div-->
+								</div>	<!--grid images div-->
+							</div>  <!--cold-md-5 div-->
+
+
+
+						<!-- showing property images -->
+						<div class="col-md-7 single-right-left simpleCart_shelfItem">
+							<div class="container-contact100">
+
+							<div class="wrap-contact100">
+								<form class="contact100-form validate-form" method='POST'>
+									<!-- <span class="contact100-form-title">
+										Property Features :
+									</span> -->
+
+									<span class="contact100-form-title">
+										<?php echo $pname?>
+									</span>
+
+									<!-- <div class="col-md-12" align='center' data-validate="Please enter your name">
+										<i class="fa fa-building-o" aria-hidden="true"></i>
+										<label><font size='6'>Property name</font></label>
+										label>Goregaon West</label><br><br>
+									</div>
+									<br><br><br> -->
+									<input type="hidden" name="pidname" id='pidname' value='<?php echo $pid?>'>
+									<div class="col-md-6" data-validate="Please enter your name">
+										<i class="fa fa-building-o" aria-hidden="true"></i>
+										<label>Area : </label>
+										<label><?php echo $area_sq_feet.' sqft'?></label><br><br>
+									</div>
+									
+									<div class="col-md-6" data-validate="Please enter your name">
+										<i class="fa fa-inr" aria-hidden="true"></i>
+										<label>Price : </label>
+										<label id='highestbid'><?php echo $startingbid?></label><br><br>
+									</div>
+									<div  class="col-md-6" data-validate = "Please enter your email: e@a.x">
+										
+										<i class="fa fa-map-marker" aria-hidden="true" style="font-size:20px"></i>
+										<label>Address: </label>
+										<label><?php echo $property_address?></label><br><br>
+									</div>
+									<br>
+									<div class="col-md-6" data-validate = "Please enter your phone">
+										<i class="fa fa-building-o" aria-hidden="true"></i>
+										<label>Property Age : </label>
+										<label><?php echo $property_age." Years"?></label><br><br>
+									</div>
+									
+									<br><br><br><br><br>
+									<span class="contact100-form-title col-md-12" id='confirmbidspan'>
+										Click the buttons to bid
+									</span>
+									<!-- <div data-validate = "Please enter your phone">
+										<label>Current Bidding Price : </label>
+										<label>30,50,000</label><br><br>
+									</div> -->
+
+									<div data-validate = "Please enter your phone">
+										<label>Your Bid : </label>
+										<input type='hidden' name='userbidinp' id='userbidinp' value=''>
+										<label id='userbiddinglbl'>30,50,000</label><br><br>
+									</div>
+											<br>
+									<div>
+
+										<div class="contact100-form-btn">
+												<button type='button' class="fa fa-plus" id='plus25' aria-hidden="true"></button>
+												&nbsp;&nbsp;&nbsp;&nbsp;25K&nbsp;&nbsp;&nbsp;&nbsp;
+												<button type='button' class="fa fa-minus" id='minus25' aria-hidden="true"></button>
+
+										</div>
+										<div class="contact100-form-btn">
+												<button type='button' class="fa fa-plus" id='plus50' aria-hidden="true"></button>
+												&nbsp;&nbsp;&nbsp;&nbsp;50K&nbsp;&nbsp;&nbsp;&nbsp;
+												<button type='button' class="fa fa-minus" id='minus50' aria-hidden="true"></button>
+
+										</div>
+										<div class="contact100-form-btn">
+												<button type='button' class="fa fa-plus" id='plus1l' aria-hidden="true"></button>
+												&nbsp;&nbsp;&nbsp;&nbsp;1L&nbsp;&nbsp;&nbsp;&nbsp;
+												<button type='button' class="fa fa-minus" id='minus1l' aria-hidden="true"></button>
+										</div>
+
+										<br><br>
+										<div>
+											<button type='submit' name='bidconfirm' class="contact100-form-btn" id='submit' aria-hidden="true">Confirm Bid</button>
+										</div>
+										
+										<!-- <span class="contact100-form-title col-md-12">
+										</span> -->
+
+										<!-- BELOW DIV FOR BUTTONS -->
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+							<!-- <div class="clearfix"> </div> -->
+				</div>
+			</div>
+
+			<!-- php code below to end the foreachloop -->
+			<?php
+
+			//photos have been printed. show the property images now.
+
+			// echo $imgs_dir;
+			// use the following to display data. (only used for debugging)
+			// echo $pid . "</br>";
+			// echo $pname . "</br>";
+			// echo $selname . "</br>";
+			// echo $typename . "</br>";
+		}
+	}else{
+		?>
+		<!-- add javascript code to redirect to different page. -->
+		<?php
+	}
+?>
+
+
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+<!---------------------------------------------------------- OUR OWN CODE ----------------------------------------------------------->
+
+
 <!-- footer -->
 <div class="footer">
 	<div class="footer_agile_inner_info_w3l">
 		<div class="col-md-3 footer-left">
-			<h2><a href="index.html"><span>E</span>lite Shoppy </a></h2>
+			<h2><a href="index.php"><span>E</span>lite Shoppy </a></h2>
 			<p>Lorem ipsum quia dolor
 			sit amet, consectetur, adipisci velit, sed quia non 
 			numquam eius modi tempora.</p>
@@ -815,7 +681,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 <!-- //login -->
 <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
@@ -835,6 +700,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 
 	<!-- //cart-js --> 
+	<!-- single -->
+<script src="js/imagezoom.js"></script>
+<!-- single -->
 <!-- script for responsive tabs -->						
 <script src="js/easy-responsive-tabs.js"></script>
 <script>
@@ -859,14 +727,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	});
 	});
 </script>
+<!-- FlexSlider -->
+<script src="js/jquery.flexslider.js"></script>
+						<script>
+						// Can also be used with $(document).ready()
+							$(window).load(function() {
+								$('.flexslider').flexslider({
+								animation: "slide",
+								controlNav: "thumbnails"
+								});
+							});
+						</script>
+					<!-- //FlexSlider-->
 <!-- //script for responsive tabs -->		
-<!-- stats -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.countup.js"></script>
-	<script>
-		$('.counter').countUp();
-	</script>
-<!-- //stats -->
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/jquery.easing.min.js"></script>
@@ -896,9 +769,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 <!-- //here ends scrolling icon -->
 
-
 <!-- for bootstrap working -->
 <script type="text/javascript" src="js/bootstrap.js"></script>
+<script src='js/our_own_js.js'></script>
 </body>
 </html>
-
